@@ -39,18 +39,9 @@
   </header>
 
   <main class="products">
-    <input type="radio" name="tab" id="tab-today" class="tabs__radio" checked />
-    <input type="radio" name="tab" id="tab-all" class="tabs__radio" />
-
-    <div class="tabs" role="tablist">
-      <label for="tab-today" class="tabs__tab tabs__tab--today">Today's Picks</label>
-      <label for="tab-all" class="tabs__tab tabs__tab--all">All Deals</label>
-    </div>
-
-    <section class="products__section products__section--today">
-      <h2 class="products__title">Today's Picks</h2>
-
-      <div class="products__grid">
+    <section class="todays-picks">
+      <h2 class="section-title">Today's Picks</h2>
+      <div class="todays-picks__rail">
         <article class="product-card">
           <a class="product-card__link" href="#product-1" aria-label="View YELONA Insulated Lunch Box details">
             <div class="product-card__image-wrap">
@@ -74,30 +65,50 @@
       </div>
     </section>
 
-    <section class="products__section products__section--all">
-      <h2 class="products__title">All Deals</h2>
+    <section class="spidey-finds">
+      <h2 class="section-title">All Spidey Finds</h2>
 
-      <div class="products__grid">
-        <article class="product-card">
-          <a class="product-card__link" href="#product-1" aria-label="View YELONA Insulated Lunch Box details">
-            <div class="product-card__image-wrap">
-              <img
-                class="product-card__image"
-                src="Assets/Product%20Details/Product%201%20Images/Image%201.jpg"
-                alt="YELONA Insulated 3-Tier Stainless Steel Lunch Box"
-                loading="lazy"
-              />
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__title">YELONA Insulated Lunch Box</h3>
-              <p class="product-card__sub">3-Tier Steel · 900ml · 6h Hot</p>
-              <div class="product-card__footer">
-                <span class="product-card__price">₹949</span>
-                <span class="product-card__cta">View details →</span>
+      <input type="radio" name="cat" id="cat-home" class="cats__radio" checked />
+      <input type="radio" name="cat" id="cat-elec" class="cats__radio" />
+      <input type="radio" name="cat" id="cat-util" class="cats__radio" />
+
+      <div class="cats" role="tablist">
+        <label for="cat-home" class="cats__tab cats__tab--home">Home &amp; Kitchen</label>
+        <label for="cat-elec" class="cats__tab cats__tab--elec">Electronics</label>
+        <label for="cat-util" class="cats__tab cats__tab--util">Utility</label>
+      </div>
+
+      <div class="cats__panel cats__panel--home">
+        <div class="products__grid">
+          <article class="product-card" data-cat="home">
+            <a class="product-card__link" href="#product-1" aria-label="View YELONA Insulated Lunch Box details">
+              <div class="product-card__image-wrap">
+                <img
+                  class="product-card__image"
+                  src="Assets/Product%20Details/Product%201%20Images/Image%201.jpg"
+                  alt="YELONA Insulated 3-Tier Stainless Steel Lunch Box"
+                  loading="lazy"
+                />
               </div>
-            </div>
-          </a>
-        </article>
+              <div class="product-card__body">
+                <h3 class="product-card__title">YELONA Insulated Lunch Box</h3>
+                <p class="product-card__sub">3-Tier Steel · 900ml · 6h Hot</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">₹949</span>
+                  <span class="product-card__cta">View details →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <div class="cats__panel cats__panel--elec">
+        <p class="cats__empty">No electronics finds yet — check back soon. 🕷️</p>
+      </div>
+
+      <div class="cats__panel cats__panel--util">
+        <p class="cats__empty">No utility finds yet — check back soon. 🕷️</p>
       </div>
     </section>
   </main>
@@ -107,6 +118,8 @@
     <a class="modal__backdrop" href="#" aria-label="Close"></a>
     <div class="modal__content">
       <a class="modal__close" href="#" aria-label="Close">×</a>
+
+      <h2 class="modal__title" id="product-1-title">YELONA Insulated Lunch Box (3-Tier, 900ml)</h2>
 
       <div class="carousel">
         <input type="radio" name="p1-img" id="p1-img-1" class="carousel__radio" checked />
@@ -140,8 +153,16 @@
       </div>
 
       <div class="modal__body">
-        <h2 class="modal__title" id="product-1-title">YELONA Insulated Lunch Box (3-Tier, 900ml)</h2>
-        <p class="modal__price">₹949</p>
+        <div class="modal__buy-row">
+          <p class="modal__price">₹949</p>
+          <a
+            class="modal__buy"
+            href="https://www.amazon.in/YELONA-Insulated-Stainless-Leakproof-Dishwasher/dp/B0FMS3YN5Y?_encoding=UTF8&pd_rd_w=5rJVW&content-id=amzn1.sym.8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_p=8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_r=QZ7FPAYMJ0T3AY2VFE3G&pd_rd_wg=YjTsp&pd_rd_r=3677a84d-f82f-458c-b209-2485d5211468&th=1&linkCode=ll2&tag=viliwyth-21&linkId=f907df8c2d89d8f93801ee7f1d72c377&ref_=as_li_ss_tl"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            >Buy on Amazon →</a
+          >
+        </div>
         <p class="modal__desc">
           Stay-hot stainless steel lunch jar designed for full meals on the go.
           Three stackable tiers let you separate sabzi, rice and a side without
@@ -155,13 +176,6 @@
           <li>BPA-free seals; the inner containers are microwave &amp; dishwasher safe</li>
           <li>Compact, leak-tested design that fits into most office bags</li>
         </ul>
-        <a
-          class="modal__buy"
-          href="https://www.amazon.in/YELONA-Insulated-Stainless-Leakproof-Dishwasher/dp/B0FMS3YN5Y?_encoding=UTF8&pd_rd_w=5rJVW&content-id=amzn1.sym.8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_p=8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_r=QZ7FPAYMJ0T3AY2VFE3G&pd_rd_wg=YjTsp&pd_rd_r=3677a84d-f82f-458c-b209-2485d5211468&th=1&linkCode=ll2&tag=viliwyth-21&linkId=f907df8c2d89d8f93801ee7f1d72c377&ref_=as_li_ss_tl"
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          >Buy on Amazon →</a
-        >
       </div>
     </div>
   </div>
