@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="Assets/css/style.css" />
 </head>
 <body>
-  <div class="doodle-bg" aria-hidden="true"></div>
-
   <header class="profile">
     <div class="profile__inner">
       <img
@@ -62,6 +60,26 @@
             </div>
           </a>
         </article>
+        <article class="product-card">
+          <a class="product-card__link" href="#product-2" aria-label="View House of Quirk Hanging Trash Can details">
+            <div class="product-card__image-wrap">
+              <img
+                class="product-card__image"
+                src="Assets/Product%20Details/Product%202%20Images/Image%201.jpg"
+                alt="House of Quirk Hanging Kitchen Trash Can 7L"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Hanging Kitchen Trash Can</h3>
+              <p class="product-card__sub">7L · Cabinet-mount · Dual-flip Lid</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹590</span>
+                <span class="product-card__cta">View details →</span>
+              </div>
+            </div>
+          </a>
+        </article>
       </div>
     </section>
 
@@ -95,6 +113,26 @@
                 <p class="product-card__sub">3-Tier Steel · 900ml · 6h Hot</p>
                 <div class="product-card__footer">
                   <span class="product-card__price">₹949</span>
+                  <span class="product-card__cta">View details →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product-card" data-cat="home">
+            <a class="product-card__link" href="#product-2" aria-label="View House of Quirk Hanging Trash Can details">
+              <div class="product-card__image-wrap">
+                <img
+                  class="product-card__image"
+                  src="Assets/Product%20Details/Product%202%20Images/Image%201.jpg"
+                  alt="House of Quirk Hanging Kitchen Trash Can 7L"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Hanging Kitchen Trash Can</h3>
+                <p class="product-card__sub">7L · Cabinet-mount · Dual-flip Lid</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">₹590</span>
                   <span class="product-card__cta">View details →</span>
                 </div>
               </div>
@@ -175,6 +213,87 @@
           <li>Built-in spoon &amp; fork tucked into the lid — no extra cutlery to carry</li>
           <li>BPA-free seals; the inner containers are microwave &amp; dishwasher safe</li>
           <li>Compact, leak-tested design that fits into most office bags</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 2 modal -->
+  <div class="modal" id="product-2" role="dialog" aria-modal="true" aria-labelledby="product-2-title">
+    <a class="modal__backdrop" href="#" aria-label="Close"></a>
+    <div class="modal__content">
+      <a class="modal__close" href="#" aria-label="Close">×</a>
+
+      <h2 class="modal__title" id="product-2-title">House of Quirk Hanging Kitchen Trash Can (7L, Dual-Flip Lid)</h2>
+
+      <div class="carousel">
+        <input type="radio" name="p2-img" id="p2-img-1" class="carousel__radio" checked />
+        <input type="radio" name="p2-img" id="p2-img-2" class="carousel__radio" />
+        <input type="radio" name="p2-img" id="p2-img-3" class="carousel__radio" />
+        <input type="radio" name="p2-img" id="p2-img-4" class="carousel__radio" />
+        <input type="radio" name="p2-img" id="p2-img-5" class="carousel__radio" />
+
+        <div class="carousel__viewport">
+          <img class="carousel__slide" src="Assets/Product%20Details/Product%202%20Images/Image%201.jpg" alt="Hanging Trash Can — view 1" />
+          <img class="carousel__slide" src="Assets/Product%20Details/Product%202%20Images/Image%202.jpg" alt="Hanging Trash Can — view 2" />
+          <img class="carousel__slide" src="Assets/Product%20Details/Product%202%20Images/Image%203.jpg" alt="Hanging Trash Can — view 3" />
+          <img class="carousel__slide" src="Assets/Product%20Details/Product%202%20Images/Iamge%204.jpg" alt="Hanging Trash Can — view 4" />
+          <img class="carousel__slide" src="Assets/Product%20Details/Product%202%20Images/Image%205.jpg" alt="Hanging Trash Can — view 5" />
+        </div>
+
+        <div class="carousel__nav carousel__nav--1">
+          <label for="p2-img-5" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p2-img-2" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+        <div class="carousel__nav carousel__nav--2">
+          <label for="p2-img-1" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p2-img-3" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+        <div class="carousel__nav carousel__nav--3">
+          <label for="p2-img-2" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p2-img-4" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+        <div class="carousel__nav carousel__nav--4">
+          <label for="p2-img-3" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p2-img-5" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+        <div class="carousel__nav carousel__nav--5">
+          <label for="p2-img-4" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p2-img-1" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+
+        <div class="carousel__dots">
+          <label for="p2-img-1" class="carousel__dot" aria-label="Image 1"></label>
+          <label for="p2-img-2" class="carousel__dot" aria-label="Image 2"></label>
+          <label for="p2-img-3" class="carousel__dot" aria-label="Image 3"></label>
+          <label for="p2-img-4" class="carousel__dot" aria-label="Image 4"></label>
+          <label for="p2-img-5" class="carousel__dot" aria-label="Image 5"></label>
+        </div>
+      </div>
+
+      <div class="modal__body">
+        <div class="modal__buy-row">
+          <p class="modal__price">₹590</p>
+          <a
+            class="modal__buy"
+            href="https://www.amazon.in/dp/B0CFL39N3M?th=1&linkCode=ll2&tag=viliwyth-21&linkId=598a20d185c908aafc69f863618868e3&ref_=as_li_ss_tl"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            >Buy on Amazon →</a
+          >
+        </div>
+        <p class="modal__desc">
+          A wall- or cabinet-door-mounted 7-litre trash can that frees up floor
+          space in tight kitchens. The dual-flip lid opens from either side, so
+          you can drop in scraps no matter which way the bin is oriented, and
+          the slim plastic body wipes clean in seconds.
+        </p>
+        <ul class="modal__features">
+          <li>7L capacity — sized for daily kitchen prep waste</li>
+          <li>Double-sided flip lid keeps odours and pests out</li>
+          <li>Hangs on cabinet doors or mounts to a wall — no floor footprint</li>
+          <li>Lightweight, durable plastic body that's easy to wipe down</li>
+          <li>Clean white finish that blends with most kitchen interiors</li>
         </ul>
       </div>
     </div>
