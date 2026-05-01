@@ -39,30 +39,67 @@
   </header>
 
   <main class="products">
-    <h2 class="products__title">Today's Picks</h2>
+    <input type="radio" name="tab" id="tab-today" class="tabs__radio" checked />
+    <input type="radio" name="tab" id="tab-all" class="tabs__radio" />
 
-    <div class="products__grid">
-      <article class="product-card">
-        <a class="product-card__link" href="#product-1" aria-label="View YELONA Insulated Lunch Box details">
-          <div class="product-card__image-wrap">
-            <img
-              class="product-card__image"
-              src="Assets/Product%20Details/Product%201%20Images/Image%201.jpg"
-              alt="YELONA Insulated 3-Tier Stainless Steel Lunch Box"
-              loading="lazy"
-            />
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__title">YELONA Insulated Lunch Box</h3>
-            <p class="product-card__sub">3-Tier Steel · 900ml · 6h Hot</p>
-            <div class="product-card__footer">
-              <span class="product-card__price">₹949</span>
-              <span class="product-card__cta">View details →</span>
-            </div>
-          </div>
-        </a>
-      </article>
+    <div class="tabs" role="tablist">
+      <label for="tab-today" class="tabs__tab tabs__tab--today">Today's Picks</label>
+      <label for="tab-all" class="tabs__tab tabs__tab--all">All Deals</label>
     </div>
+
+    <section class="products__section products__section--today">
+      <h2 class="products__title">Today's Picks</h2>
+
+      <div class="products__grid">
+        <article class="product-card">
+          <a class="product-card__link" href="#product-1" aria-label="View YELONA Insulated Lunch Box details">
+            <div class="product-card__image-wrap">
+              <img
+                class="product-card__image"
+                src="Assets/Product%20Details/Product%201%20Images/Image%201.jpg"
+                alt="YELONA Insulated 3-Tier Stainless Steel Lunch Box"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">YELONA Insulated Lunch Box</h3>
+              <p class="product-card__sub">3-Tier Steel · 900ml · 6h Hot</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹949</span>
+                <span class="product-card__cta">View details →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="products__section products__section--all">
+      <h2 class="products__title">All Deals</h2>
+
+      <div class="products__grid">
+        <article class="product-card">
+          <a class="product-card__link" href="#product-1" aria-label="View YELONA Insulated Lunch Box details">
+            <div class="product-card__image-wrap">
+              <img
+                class="product-card__image"
+                src="Assets/Product%20Details/Product%201%20Images/Image%201.jpg"
+                alt="YELONA Insulated 3-Tier Stainless Steel Lunch Box"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">YELONA Insulated Lunch Box</h3>
+              <p class="product-card__sub">3-Tier Steel · 900ml · 6h Hot</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹949</span>
+                <span class="product-card__cta">View details →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
   </main>
 
   <!-- Product modal: opens via #product-1 in the URL, closes via # -->
@@ -80,6 +117,19 @@
           <img class="carousel__slide" src="Assets/Product%20Details/Product%201%20Images/Image%201.jpg" alt="YELONA Lunch Box — view 1" />
           <img class="carousel__slide" src="Assets/Product%20Details/Product%201%20Images/Image%202.jpg" alt="YELONA Lunch Box — view 2" />
           <img class="carousel__slide" src="Assets/Product%20Details/Product%201%20Images/Image%203.jpg" alt="YELONA Lunch Box — view 3" />
+        </div>
+
+        <div class="carousel__nav carousel__nav--1">
+          <label for="p1-img-3" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p1-img-2" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+        <div class="carousel__nav carousel__nav--2">
+          <label for="p1-img-1" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p1-img-3" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
+        </div>
+        <div class="carousel__nav carousel__nav--3">
+          <label for="p1-img-2" class="carousel__arrow carousel__arrow--prev" aria-label="Previous image">‹</label>
+          <label for="p1-img-1" class="carousel__arrow carousel__arrow--next" aria-label="Next image">›</label>
         </div>
 
         <div class="carousel__dots">
@@ -107,7 +157,7 @@
         </ul>
         <a
           class="modal__buy"
-          href="https://www.amazon.in/YELONA-Insulated-Stainless-Leakproof-Dishwasher/dp/B0FMS3YN5Y/?_encoding=UTF8&pd_rd_w=5rJVW&content-id=amzn1.sym.8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_p=8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_r=QZ7FPAYMJ0T3AY2VFE3G&pd_rd_wg=YjTsp&pd_rd_r=3677a84d-f82f-458c-b209-2485d5211468&ref_=pd_hp_d_btf_LPDEALS&th=1"
+          href="https://www.amazon.in/YELONA-Insulated-Stainless-Leakproof-Dishwasher/dp/B0FMS3YN5Y?_encoding=UTF8&pd_rd_w=5rJVW&content-id=amzn1.sym.8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_p=8742e3a6-fb96-4d77-a224-37a14c91ffb2&pf_rd_r=QZ7FPAYMJ0T3AY2VFE3G&pd_rd_wg=YjTsp&pd_rd_r=3677a84d-f82f-458c-b209-2485d5211468&th=1&linkCode=ll2&tag=viliwyth-21&linkId=f907df8c2d89d8f93801ee7f1d72c377&ref_=as_li_ss_tl"
           target="_blank"
           rel="noopener noreferrer sponsored"
           >Buy on Amazon →</a
