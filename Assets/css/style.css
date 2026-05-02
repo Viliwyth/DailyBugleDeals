@@ -149,6 +149,7 @@ body {
 /* ---------- Today's Picks rail ---------- */
 .todays-picks {
   margin-bottom: 36px;
+  position: relative;
 }
 
 .todays-picks__rail {
@@ -721,8 +722,35 @@ body {
     padding: 16px 14px 50px;
   }
   .todays-picks__rail {
-    grid-auto-columns: calc((100% - 12px) / 2);
+    grid-auto-columns: 62%;
     gap: 12px;
+  }
+  .todays-picks::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 0;
+    bottom: 14px;
+    width: 36px;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(241, 243, 245, 0), var(--bg) 80%);
+  }
+  .todays-picks::before {
+    content: "›";
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-10%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-deep);
+    pointer-events: none;
+    z-index: 2;
+    animation: nudgeRight 1.6s ease-in-out infinite;
+  }
+  @keyframes nudgeRight {
+    0%, 100% { transform: translateY(-10%) translateX(0); opacity: 0.6; }
+    50%      { transform: translateY(-10%) translateX(4px); opacity: 1; }
   }
   .cats__tab {
     font-size: 0.72rem;
