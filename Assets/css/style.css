@@ -576,7 +576,13 @@ body {
 #p3-img-3:checked ~ .carousel__viewport .carousel__slide:nth-child(3),
 #p3-img-4:checked ~ .carousel__viewport .carousel__slide:nth-child(4),
 #p3-img-5:checked ~ .carousel__viewport .carousel__slide:nth-child(5),
-#p3-img-6:checked ~ .carousel__viewport .carousel__slide:nth-child(6) {
+#p3-img-6:checked ~ .carousel__viewport .carousel__slide:nth-child(6),
+#p4-img-1:checked ~ .carousel__viewport .carousel__slide:nth-child(1),
+#p4-img-2:checked ~ .carousel__viewport .carousel__slide:nth-child(2),
+#p4-img-3:checked ~ .carousel__viewport .carousel__slide:nth-child(3),
+#p4-img-4:checked ~ .carousel__viewport .carousel__slide:nth-child(4),
+#p4-img-5:checked ~ .carousel__viewport .carousel__slide:nth-child(5),
+#p4-img-6:checked ~ .carousel__viewport .carousel__slide:nth-child(6) {
   opacity: 1;
 }
 
@@ -601,7 +607,13 @@ body {
 #p3-img-3:checked ~ .carousel__nav--3,
 #p3-img-4:checked ~ .carousel__nav--4,
 #p3-img-5:checked ~ .carousel__nav--5,
-#p3-img-6:checked ~ .carousel__nav--6 {
+#p3-img-6:checked ~ .carousel__nav--6,
+#p4-img-1:checked ~ .carousel__nav--1,
+#p4-img-2:checked ~ .carousel__nav--2,
+#p4-img-3:checked ~ .carousel__nav--3,
+#p4-img-4:checked ~ .carousel__nav--4,
+#p4-img-5:checked ~ .carousel__nav--5,
+#p4-img-6:checked ~ .carousel__nav--6 {
   display: block;
 }
 
@@ -682,7 +694,13 @@ body {
 #p3-img-3:checked ~ .carousel__dots .carousel__dot:nth-child(3),
 #p3-img-4:checked ~ .carousel__dots .carousel__dot:nth-child(4),
 #p3-img-5:checked ~ .carousel__dots .carousel__dot:nth-child(5),
-#p3-img-6:checked ~ .carousel__dots .carousel__dot:nth-child(6) {
+#p3-img-6:checked ~ .carousel__dots .carousel__dot:nth-child(6),
+#p4-img-1:checked ~ .carousel__dots .carousel__dot:nth-child(1),
+#p4-img-2:checked ~ .carousel__dots .carousel__dot:nth-child(2),
+#p4-img-3:checked ~ .carousel__dots .carousel__dot:nth-child(3),
+#p4-img-4:checked ~ .carousel__dots .carousel__dot:nth-child(4),
+#p4-img-5:checked ~ .carousel__dots .carousel__dot:nth-child(5),
+#p4-img-6:checked ~ .carousel__dots .carousel__dot:nth-child(6) {
   background: var(--accent-deep);
   transform: scale(1.2);
 }
